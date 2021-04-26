@@ -8,12 +8,5 @@
     <span id="email">{{email}}</span>
   </address>
 </div>
-<div>
-  <h3>Work Experience</h3>
-  <p>{{workExperience}}</p>
-</div>
-<div>
-  <h3>Education</h3>
-  <p>{{education[0]}}</p>
-  <p>{{education[1]}}</p>
-</div>
+<app-education *ngIf="displayEducation"></app-education>
+<app-work-experience></app-work-experience>
